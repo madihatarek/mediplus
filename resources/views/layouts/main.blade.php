@@ -1,5 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html lang="{{LaravelLocalization::getCurrentLocale()}}" dir="{{ 
+	LaravelLocalization::getCurrentLocaleDirection() }}">	
+	{{-- <html lang="en"> --}}
     <head>
         @include('includes.head')
     </head>

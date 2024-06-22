@@ -17,24 +17,24 @@
                     <div class="main-menu">
                         <nav class="navigation">
                             <ul class="nav menu">
-                                <li class="{{ Route::is('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</i></a>
+                                <li class="{{ Route::is('home') ? 'active' : '' }}"><a href="{{ route('home') }}"> {{ __('messages.home') }} </i></a>
                                     {{-- <ul class="dropdown">
                                         <li><a href="index.html">Home Page 1</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="{{ Route::is('doctors') ? 'active' : '' }}"><a href="{{ route('doctors') }}"> Doctors </a></li>
-                                <li class="{{ Route::is('services') ? 'active' : '' }}"><a href="{{ route('services') }}"> Services </a></li>
-                                <li class="{{ Route::is('error404') ? 'active' : '' }}"><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+                                <li class="{{ Route::is('doctors') ? 'active' : '' }}"><a href="{{ route('doctors') }}"> {{ __('messages.doctors') }} </a></li>
+                                <li class="{{ Route::is('services') ? 'active' : '' }}"><a href="{{ route('services') }}"> {{ __('messages.services') }} </a></li>
+                                <li class="{{ Route::is('error404') ? 'active' : '' }}"><a href="#">{{ __('messages.pages') }} <i class="icofont-rounded-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="{{ route('error404') }}">404 Error</a></li>
+                                        <li><a href="{{ route('error404') }}">{{ __('messages.error') }}</a></li>
                                     </ul>
                                 </li>
-                                <li class="{{ Route::is('blog-single') ? 'active' : '' }}"><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+                                <li class="{{ Route::is('blog-single') ? 'active' : '' }}"><a href="#">{{ __('messages.blogs') }} <i class="icofont-rounded-down"></i></a>
                                     <ul class="dropdown">
-                                        <li><a href="{{ route('blog-single') }}">Blog Details</a></li>
+                                        <li><a href="{{ route('blog-single') }}"> {{ __('messages.blog_details') }} </a></li>
                                     </ul>
                                 </li>
-                                <li class="{{ Route::is('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">Contact Us</a></li>
+                                <li class="{{ Route::is('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">{{ __('messages.contact_us') }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-2 col-12">
                     <div class="get-quote">
-                        <a href="{{ route('bookAppointment') }}" class="btn">Book Appointment</a>
+                        <a href="{{ route('bookAppointment') }}" class="btn">{{ __('messages.book_appointment') }}</a>
                     </div>
                 </div>
             </div>
